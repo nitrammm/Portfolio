@@ -2,7 +2,7 @@
   "name": "websiteportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://{nitrammm}.github.io/{portfolio}",
+  "homepage": "http://nitrammm.github.io/portfolio",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
