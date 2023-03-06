@@ -1,7 +1,6 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
-import CameraIcon from '@mui/icons-material/PhotoCamera';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -18,14 +17,15 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import lizard from './images/Rogue1.png'
 import lawn from './images/Rogue2.png'
 import sneaker from './images/Rogue3.png'
+import DeckOutlinedIcon from '@mui/icons-material/DeckOutlined';
 
 
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href="">
+        Martin's Portfolio
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -33,7 +33,25 @@ function Copyright() {
   );
 }
 
-const theme = createTheme();
+
+let theme = createTheme({
+  palette: {
+  primary: {
+    main: '#8a7783',
+  },
+  secondary: {
+    main: '#937783',
+  },
+},
+});
+
+theme = createTheme(theme, {
+  palette: {
+    info: {
+      main: theme.palette.secondary.main,
+    },
+  },
+});
 
 export default function Album() {
   return (
@@ -41,7 +59,7 @@ export default function Album() {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <CameraIcon sx={{ mr: 2 }} />
+          <DeckOutlinedIcon sx={{ mr: 2 }} />
           <Typography variant="h6" color="inherit" noWrap>
             Martin's Portfolio
           </Typography>
@@ -67,17 +85,17 @@ export default function Album() {
               About Me
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Hi, my name is Martin Huerta. A Junior Software Engineer passionate about design and front-end web development, currently working with JavaScript, React, and other styling frameworks like MUI and Bulma. Recently finished The Coding Bootcamp at UT Austin, eager to keep learning and growing in the field.   
+              Hi, my name is Martin Huerta. A Junior Software Engineer passionate about design and front-end web development, currently working with JavaScript, React, Node and other styling frameworks like MUI and Bulma. Recently finished The Coding Bootcamp at UT Austin, eager to keep learning and growing in the field.   
             </Typography>
-            <Stack
+            {/* <Stack 
               sx={{ pt: 4 }}
               direction="row"
               spacing={2}
               justifyContent="center"
-            >
+            > 
               <Button variant="contained">Main call to action</Button>
               <Button variant="outlined">Secondary action</Button>
-            </Stack>
+            </Stack>*/}
           </Container>
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
@@ -92,7 +110,7 @@ export default function Album() {
                     component="img"
                     sx={{
                       // 16:9
-                      pt: '56.25%',
+                      pt: '0.25%',
                     }}
                     image={lizard}
                     alt="random"
@@ -121,7 +139,7 @@ export default function Album() {
                                 component="img"
                                 sx={{
                                   // 16:9
-                                  pt: '56.25%',
+                                  pt: '0.25%',
                                 }}
                                 image={lawn}
                                 alt="random"
@@ -150,7 +168,7 @@ export default function Album() {
                                             component="img"
                                             sx={{
                                               // 16:9
-                                              pt: '56.25%',
+                                              pt: '0.25%',
                                             }}
                                             image={sneaker}
                                             alt="random"
@@ -160,7 +178,7 @@ export default function Album() {
                                               Project Three
                                             </Typography>
                                             <Typography gutterBottom variant="h5" component="h2">
-                                              Jays on Your Feet
+                                              Shoe Marketplace
                                             </Typography>
                                             <Typography>
                                               A luxury shoe marketplace where users can log in and shop for rare shoes.
@@ -177,16 +195,13 @@ export default function Album() {
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
         <Typography
           variant="subtitle1"
           align="center"
           color="text.secondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+          martinhuertajr@gmail.com
         </Typography>
         <Copyright />
       </Box>
