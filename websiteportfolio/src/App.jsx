@@ -1,5 +1,4 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -7,9 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
@@ -17,7 +14,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import lizard from './images/Rogue1.png'
 import lawn from './images/Rogue2.png'
 import sneaker from './images/Rogue3.png'
-import DeckOutlinedIcon from '@mui/icons-material/DeckOutlined';
+import HomeBar from './components/HomeBar';
+
 
 
 function Copyright() {
@@ -53,18 +51,26 @@ theme = createTheme(theme, {
   },
 });
 
+function openPage() {
+  const url = 'https://sophiaaramburu.github.io/WikiTube/';
+  window.open(url)
+}
+
+function openSecondProject() {
+  const urlProjectTwo = 'https://knowmowworries.onrender.com/';
+  window.open(urlProjectTwo)
+}
+
+function openThirdProject() {
+  const urlThirdProject = 'https://stormy-cliffs-65992.herokuapp.com/';
+  window.open(urlThirdProject)
+}
+
 export default function Album() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <DeckOutlinedIcon sx={{ mr: 2 }} />
-          <Typography variant="h6" color="inherit" noWrap>
-            Martin's Portfolio
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <HomeBar />
       <main>
         {/* Hero unit */}
         <Box
@@ -127,15 +133,15 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" href='https://sophiaaramburu.github.io/WikiTube/'>View</Button>
+                    <Button size="small" onClick={openPage}>View</Button>
                   </CardActions>
                 </Card>
               </Grid>
                      <Grid item xs={12} sm={6} md={4}>
-                            <Card
-                              sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                            >
-                              <CardMedia
+                       <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                        >
+                      <CardMedia
                                 component="img"
                                 sx={{
                                   // 16:9
@@ -156,7 +162,7 @@ export default function Album() {
                                 </Typography>
                               </CardContent>
                               <CardActions>
-                                <Button size="small" href='https://knowmowworries.onrender.com/'>View</Button>
+                                <Button size="small" onClick={openSecondProject}>View</Button>
                               </CardActions>
                             </Card>
                           </Grid>
@@ -185,7 +191,7 @@ export default function Album() {
                                             </Typography>
                                           </CardContent>
                                           <CardActions>
-                                            <Button size="small" href='https://stormy-cliffs-65992.herokuapp.com/'>View</Button>
+                                            <Button size="small" onClick={openThirdProject}>View</Button>
                                           </CardActions>
                                         </Card>
                                       </Grid>
