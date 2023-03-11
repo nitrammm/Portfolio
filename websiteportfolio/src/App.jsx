@@ -11,11 +11,10 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import lizard from './images/Rogue1.png'
-import lawn from './images/Rogue2.png'
-import sneaker from './images/Rogue3.png'
 import HomeBar from './components/HomeBar';
-
+import wikiphoto from './images/wikitube1891.png';
+import knowmowphoto from './images/knowmow1891.png';
+import shoephoto from './images/shoe1891.png';
 
 
 function Copyright() {
@@ -118,7 +117,7 @@ export default function Album() {
                       // 16:9
                       pt: '0.25%',
                     }}
-                    image={lizard}
+                    image={wikiphoto}
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
@@ -147,7 +146,7 @@ export default function Album() {
                                   // 16:9
                                   pt: '0.25%',
                                 }}
-                                image={lawn}
+                                image={knowmowphoto}
                                 alt="random"
                               />
                               <CardContent sx={{ flexGrow: 1 }}>
@@ -157,8 +156,23 @@ export default function Album() {
                                 <Typography gutterBottom variant="h5" component="h2">
                                   Know Mow Worries
                                 </Typography>
-                                <Typography>
+                                <Typography gutterBottom>
                                   A lawn service app where self employed lawn care professionals can list their job postings in their local area, and get rated by reviews.
+                                  </Typography>
+                                  <Typography>
+                                  <Typography variant='h6'>
+                                  Login Info
+                                  </Typography>
+                                  <Typography>
+                                  name: Sal
+                                  </Typography>
+                                  <Typography>
+                                  email: sal@hotmail.com
+                                  </Typography>
+                                  <Typography>
+                                  password: password12345
+                                  </Typography>
+
                                 </Typography>
                               </CardContent>
                               <CardActions>
@@ -176,7 +190,7 @@ export default function Album() {
                                               // 16:9
                                               pt: '0.25%',
                                             }}
-                                            image={sneaker}
+                                            image={shoephoto}
                                             alt="random"
                                           />
                                           <CardContent sx={{ flexGrow: 1 }}>
@@ -186,9 +200,21 @@ export default function Album() {
                                             <Typography gutterBottom variant="h5" component="h2">
                                               Shoe Marketplace
                                             </Typography>
-                                            <Typography>
+                                            <Typography gutterBottom>
                                               A luxury shoe marketplace where users can log in and shop for rare shoes.
                                             </Typography>
+                                  <Typography variant='h6'>
+                                  Login Info
+                                  </Typography>
+                                  <Typography>
+                                  name: john smith
+                                  </Typography>
+                                  <Typography>
+                                  email: jsmith@test.com
+                                  </Typography>
+                                  <Typography>
+                                  password: pw12345
+                                  </Typography>
                                           </CardContent>
                                           <CardActions>
                                             <Button size="small" onClick={openThirdProject}>View</Button>
