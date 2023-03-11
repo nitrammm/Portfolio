@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/portfolio/static/js/main.298ac632.js",
+    "main.js": "/portfolio/static/js/main.4e8bf6c5.js",
     "static/js/787.b56f50e7.chunk.js": "/portfolio/static/js/787.b56f50e7.chunk.js",
-    "static/media/Rogue3.png": "/portfolio/static/media/Rogue3.9903ef7559d4641561ed.png",
-    "static/media/Rogue2.png": "/portfolio/static/media/Rogue2.f4215d3d971ed30cf186.png",
-    "static/media/Rogue1.png": "/portfolio/static/media/Rogue1.08799dee41921eafee0f.png",
+    "static/media/wikitube1891.png": "/portfolio/static/media/wikitube1891.813abfeea2732b104bd4.png",
+    "static/media/shoe1891.png": "/portfolio/static/media/shoe1891.bf7b4e14ddcbaa4d89ff.png",
+    "static/media/knowmow1891.png": "/portfolio/static/media/knowmow1891.4e312ab5bbf9a1322e1c.png",
     "index.html": "/portfolio/index.html",
     "main.e6c13ad2.css.map": "/portfolio/static/css/main.e6c13ad2.css.map",
-    "main.298ac632.js.map": "/portfolio/static/js/main.298ac632.js.map",
+    "main.4e8bf6c5.js.map": "/portfolio/static/js/main.4e8bf6c5.js.map",
     "787.b56f50e7.chunk.js.map": "/portfolio/static/js/787.b56f50e7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.298ac632.js"
+    "static/js/main.4e8bf6c5.js"
   ]
 }
